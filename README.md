@@ -5,3 +5,4 @@ I don't know who the original author is, but this repo is an improved version of
 # Changes in this fork
 
 * Prefer `=` over `-` for haml snippets (Rails 3 way)
+* Prefer 'respond to format.html' over 'respond to wants.html'
