@@ -1,0 +1,1 @@
+This package replaces the default Sublime Rails snippets. Additional setup steps are required. Visit https://github.com/tadast/sublime-rails-snippets#sublime-text-2-rails-snippets for instructions
