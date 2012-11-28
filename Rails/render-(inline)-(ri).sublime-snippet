@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[render :inline => "${1:<%= 'hello' %>}"]]></content>
+    <content><![CDATA[render inline: "${1:<%= 'hello' %>}"]]></content>
     <tabTrigger>ri</tabTrigger>
     <scope>source.ruby.rails</scope>
     <description>render (inline)</description>

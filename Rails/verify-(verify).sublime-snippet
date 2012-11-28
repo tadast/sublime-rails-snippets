@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[verify :only => [:$1], :method => :post, :render => {:status => 500, :text => "use HTTP-POST"}
+    <content><![CDATA[verify only: [:$1], method: :post, render: { status: 500, text: "use HTTP-POST" }
 ]]></content>
     <tabTrigger>verify</tabTrigger>
     <scope>source.ruby.rails</scope>
