@@ -17,7 +17,8 @@ The rest is the same as the default Rails snippets.
 
 # Installation
 
-* This package replaces the default Sublime Rails snippets.*
+** This package replaces the default Sublime Rails snippets.**
+
 If you installed it via Package control, you will need to do some housekeeping, see [troubleshooting](#troubleshooting).
 
 Regardless which way of installation you choose, please backup the old Rails snippets installation. You don't want to have both this and the original installed.
