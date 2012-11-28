@@ -26,7 +26,7 @@
                 <key>name</key>
                 <string>TM_RAILS_TEMPLATE_START_RUBY_INLINE</string>
                 <key>value</key>
-                <string>- </string>
+                <string>= </string>
             </dict>
             <dict>
                 <key>name</key>
