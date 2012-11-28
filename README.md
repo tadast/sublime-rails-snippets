@@ -10,4 +10,5 @@ I don't know who the original author is, but this repo is an improved version of
 * All rjs snippets removed
 * `class<tab>` autocompletes a ruby class
 * `arc<tab>` autocompletes an ActiveRecord model class
-* `con` autocompletes a controller class
+* `con<tab>` autocompletes a controller class
+* `crud<tab>` autocompleted controller actions

@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+  def index
+    @${1} = ${1/(.+)/\u$1/g}.scoped
+  end
+
+  def show
+    @${1} = ${1/(.+)/\u$1/g}.find(params[:id])
+  end
+
+  def create
+    @${1} = ${1/(.+)/\u$1/g}.new(params[:${1}])
+  end
+
+  def edit
+    @${1} = ${1/(.+)/\u$1/g}.find(params[:id])
+  end
+
+  def destroy
+    ${1} = ${1/(.+)/\u$1/g}.find(params[:id])
+  end]]></content>
+    <tabTrigger>crud</tabTrigger>
+    <scope>meta.rails.controller</scope>
+    <description>crud actions</description>
+</snippet>
