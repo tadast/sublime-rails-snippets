@@ -21,15 +21,15 @@ The rest is the same as the default Rails snippets.
 
 If you installed it via Package control, you will need to do some housekeeping, see [troubleshooting](#troubleshooting).
 
-Regardless which way of installation you choose, please backup the old Rails snippets installation. You don't want to have both this and the original installed.
+Regardless of which way of installation you choose, please backup the old Rails snippets installation. You don't want to have both this and the original installed.
 
-    $ cd /Library/Application Support/Sublime Text 2/Packages
-    $ mv Rails ~/SublimeRailsBackup
+    ➜ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+    ➜ mv Rails ~/.RailsSublimeBackup
 
 ## From Git
 
-    $ cd /Library/Application Support/Sublime Text 2/Packages
-    $ git clone https://github.com/tadast/sublime-rails-snippets.git Rails
+    ➜ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+    ➜ git clone https://github.com/tadast/sublime-rails-snippets.git Rails
 
 ## From an archive
 
