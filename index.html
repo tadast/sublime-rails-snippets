@@ -1,0 +1,1261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <style>
+    /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+[hidden] {
+    display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+/*
+ * Removes default margin.
+ */
+body {
+    margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+    outline: thin dotted;
+}
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+    outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+h1 {
+    font-size: 2em;
+}
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+    font-weight: bold;
+}
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+dfn {
+    font-style: italic;
+}
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/*
+ * Sets consistent quote types.
+ */
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+img {
+    border: 0;
+}
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+    margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+    line-height: normal;
+}
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Table CSS */
+table.snippets{
+  text-align: left;
+  width: 100%;
+}
+.snippets tr:nth-child(odd){
+  background: #e8edff;
+}
+.snippets td{
+  color: #669;
+  padding: 8px;
+}
+.snippets th{
+  color: #039;
+  padding: 10px 8px;
+}
+
+/* Custom styles */
+body{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  width: 1152px;
+}
+.padded{
+  padding: 1em;
+}
+.hpadded{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 252px;
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+section{
+  float: left;
+  margin-left: 272px;
+  width: 880px;
+}
+.scope_links{
+  list-style: none;
+  padding: 0;
+}
+.scope_links li a{
+  display: block;
+  padding: 8px;
+}
+.scope_links li:nth-child(odd) a{
+  background: #e8edff;
+}
+.scope_links li a:hover{
+  background: #fffbc3;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <h2 class='hpadded'>Scopes</h2>
+    <ul class='scope_links'>
+      <li>
+        <a href='#meta_rails_controller'>meta.rails.controller</a>
+      </li>
+      <li>
+        <a href='#meta_rails_functional_test'>meta.rails.functional_test</a>
+      </li>
+      <li>
+        <a href='#meta_rails_migration___meta_rails_migration_create_table___meta_rails_migration_change_table'>meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table</a>
+      </li>
+      <li>
+        <a href='#meta_rails_migration_create_table'>meta.rails.migration.create_table</a>
+      </li>
+      <li>
+        <a href='#meta_rails_migration_create_table__meta_rails_migration_change_table'>meta.rails.migration.create_table, meta.rails.migration.change_table</a>
+      </li>
+      <li>
+        <a href='#meta_rails_routes'>meta.rails.routes</a>
+      </li>
+      <li>
+        <a href='#source_ruby'>source.ruby</a>
+      </li>
+      <li>
+        <a href='#source_ruby_rails'>source.ruby.rails</a>
+      </li>
+      <li>
+        <a href='#source_yaml'>source.yaml</a>
+      </li>
+      <li>
+        <a href='#text_html_ruby'>text.html.ruby</a>
+      </li>
+      <li>
+        <a href='#text_html_ruby__text_haml'>text.html.ruby, text.haml</a>
+      </li>
+    </ul>
+    <small class='padded'>
+      Generated with
+      <a href='https://github.com/tadast/snipcheat'>Snipcheat</a>
+    </small>
+  </nav>
+  <section>
+    <h2 class='hpadded' id='meta_rails_controller'>meta.rails.controller</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='&#x000A;  def index&#x000A;    @${1} = ${1/(.+)/\u$1/g}.scoped&#x000A;  end&#x000A;&#x000A;  def show&#x000A;    @${1} = ${1/(.+)/\u$1/g}.find(params[:id])&#x000A;  end&#x000A;&#x000A;  def create&#x000A;    @${1} = ${1/(.+)/\u$1/g}.new(params[:${1}])&#x000A;  end&#x000A;&#x000A;  def edit&#x000A;    @${1} = ${1/(.+)/\u$1/g}.find(params[:id])&#x000A;  end&#x000A;&#x000A;  def destroy&#x000A;    ${1} = ${1/(.+)/\u$1/g}.find(params[:id])&#x000A;  end'>
+        <td>crud</td>
+        <td>crud actions</td>
+      </tr>
+      <tr title='def create&#x000A;  @${1:model} = ${2:${1/[[:alpha:]]+|(_)/(?1::\u$0)/g}}.new(params[:$1])&#x000A;  $0&#x000A;  respond_to do |format|&#x000A;    if @$1.save&#x000A;      flash[:notice] = &apos;$2 was successfully created.&apos;&#x000A;      format.html { redirect_to(@$1) }&#x000A;      format.xml { render xml: @$1, status: :created, location: @$1 }&#x000A;    else&#x000A;      format.html { render action: "new" }&#x000A;      format.xml { render xml: @$1.errors, status: :unprocessable_entity }&#x000A;    end&#x000A;  end&#x000A;end'>
+        <td>defcreate</td>
+        <td>def create - resource</td>
+      </tr>
+      <tr title='format.${1:js|xml|html}${2: { $0 \}}'>
+        <td>format</td>
+        <td>format.format</td>
+      </tr>
+      <tr title='respond_to do |format|&#x000A;	format.${1:html}${2: { $0 \}}&#x000A;end'>
+        <td>rest</td>
+        <td>respond_to</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='meta_rails_functional_test'>meta.rails.functional_test</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='def test_should_get_${1:action}&#x000A;	${2:@${3:model} = ${4:$3s}(:${5:fixture_name})&#x000A;	}get :${1}${6:, id: @$3.to_param}&#x000A;	assert_response :success&#x000A;	$0&#x000A;end'>
+        <td>deftg</td>
+        <td>def test_should_get_action</td>
+      </tr>
+      <tr title='def test_should_post_${1:action}&#x000A;	${3:@$2 = ${4:$2s}(:${5:fixture_name})&#x000A;	}post :${1}${6:, id: @$2.to_param}, ${2:model}: { $0 }&#x000A;	assert_response :redirect&#x000A;&#x000A;end'>
+        <td>deftp</td>
+        <td>def test_should_post_action</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='meta_rails_migration___meta_rails_migration_create_table___meta_rails_migration_change_table'>meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='remove_column :${1:table}, :${2:column}${3: [press tab twice to generate add_column]}'>
+        <td>mcol</td>
+        <td>Remove / Add Column</td>
+      </tr>
+      <tr title='drop_table :${1:table}${2: [press tab twice to generate create_table]}'>
+        <td>mtab</td>
+        <td>Drop / Create Table</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='meta_rails_migration_create_table'>meta.rails.migration.create_table</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='t.column ${1:title}, :${2:string}&#x000A;mccc$0'>
+        <td>mccc</td>
+        <td>Create Several Columns in Table</td>
+      </tr>
+      <tr title='t.column ${1:title}, :${2:string}&#x000A;$0'>
+        <td>mcol</td>
+        <td>Create Column in Table</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='meta_rails_migration_create_table__meta_rails_migration_change_table'>meta.rails.migration.create_table, meta.rails.migration.change_table</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='t.boolean :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.boolean (tcb)</td>
+      </tr>
+      <tr title='t.date :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.date (tcda)</td>
+      </tr>
+      <tr title='t.timestamps&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.timestamps (tctss)</td>
+      </tr>
+      <tr title='t.timestamp :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.timestamp (tcts)</td>
+      </tr>
+      <tr title='t.time :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.time (tcti)</td>
+      </tr>
+      <tr title='t.text :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.text (tct)</td>
+      </tr>
+      <tr title='t.string :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.string (tcs)</td>
+      </tr>
+      <tr title='t.rename(:${1:old_column_name}, :${2:new_column_name})&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.rename (tre)</td>
+      </tr>
+      <tr title='t.binary :${1:title}${2:, limit: ${3:2}.megabytes}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.binary (tcbi)</td>
+      </tr>
+      <tr title='t.integer :lock_version, null: false, default: 0&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.lock_version (tcl)</td>
+      </tr>
+      <tr title='t.integer :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.integer (tci)</td>
+      </tr>
+      <tr title='t.float :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.float (tcf)</td>
+      </tr>
+      <tr title='t.decimal :${1:title}${2:${3:, precision: ${4:10}}${5:, scale: ${6:2}}}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.decimal (tcd)</td>
+      </tr>
+      <tr title='t.datetime :${1:title}&#x000A;t.$0'>
+        <td>t.</td>
+        <td>t.datetime (tcdt)</td>
+      </tr>
+      <tr title="t.references :${1:taggable}${2:, polymorphic: ${3:{ default: '${4:Photo}' \}}}&#x000A;t.$0">
+        <td>t.</td>
+        <td>t.references (tcr)</td>
+      </tr>
+      <tr title='t.boolean :${1:title}&#x000A;$0'>
+        <td>tcb</td>
+        <td>Table column boolean</td>
+      </tr>
+      <tr title='t.binary :${1:title}${2:, limit: ${3:2}.megabytes}&#x000A;$0'>
+        <td>tcbi</td>
+        <td>Table column binary</td>
+      </tr>
+      <tr title='t.decimal :${1:title}${2:${3:, precision: ${4:10}}${5:, scale: ${6:2}}}&#x000A;$0'>
+        <td>tcd</td>
+        <td>Table column decimal</td>
+      </tr>
+      <tr title='t.date :${1:title}&#x000A;$0'>
+        <td>tcda</td>
+        <td>Table column date</td>
+      </tr>
+      <tr title='t.datetime :${1:title}&#x000A;$0'>
+        <td>tcdt</td>
+        <td>Table column datetime</td>
+      </tr>
+      <tr title='t.float :${1:title}&#x000A;$0'>
+        <td>tcf</td>
+        <td>Table column float</td>
+      </tr>
+      <tr title='t.integer :${1:title}&#x000A;$0'>
+        <td>tci</td>
+        <td>Table column integer</td>
+      </tr>
+      <tr title='t.integer :lock_version, null: false, default: 0&#x000A;$0'>
+        <td>tcl</td>
+        <td>Table column lock_version</td>
+      </tr>
+      <tr title="t.references :${1:taggable}${2:, polymorphic: ${3:{ default: '${4:Photo}' \}}}&#x000A;$0">
+        <td>tcr</td>
+        <td>Table column(s) references</td>
+      </tr>
+      <tr title='t.string :${1:title}&#x000A;$0'>
+        <td>tcs</td>
+        <td>Table column string</td>
+      </tr>
+      <tr title='t.text :${1:title}&#x000A;$0'>
+        <td>tct</td>
+        <td>Table column text</td>
+      </tr>
+      <tr title='t.time :${1:title}&#x000A;$0'>
+        <td>tcti</td>
+        <td>Table column time</td>
+      </tr>
+      <tr title='t.timestamp :${1:title}&#x000A;$0'>
+        <td>tcts</td>
+        <td>Table column timestamp</td>
+      </tr>
+      <tr title='t.timestamps&#x000A;$0'>
+        <td>tctss</td>
+        <td>Table column timestamps</td>
+      </tr>
+      <tr title='t.rename(:${1:old_column_name}, :${2:new_column_name})&#x000A;$0'>
+        <td>tre</td>
+        <td>Table column(s) rename</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='meta_rails_routes'>meta.rails.routes</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title="${1:map}.${2:connect} '${3::controller/:action/:id}'">
+        <td>map</td>
+        <td>map.named_route</td>
+      </tr>
+      <tr title='${1:map}.catch_all "*${2:anything}", controller: "${3:default}", action: "${4:error}"'>
+        <td>mapca</td>
+        <td>map.catch_all</td>
+      </tr>
+      <tr title='${1:map}.resource :${2:resource}${10: do |${11:$2}|&#x000A;  $0&#x000A;end}'>
+        <td>mapr</td>
+        <td>map.resource</td>
+      </tr>
+      <tr title='${1:map}.resources :${2:resource}${10: do |${11:$2}|&#x000A;  $0&#x000A;end}'>
+        <td>maprs</td>
+        <td>map.resources</td>
+      </tr>
+      <tr title="${1:map}.with_options ${2:controller}: '${3:thing}' do |${4:$3}|&#x000A;  $0&#x000A;end">
+        <td>mapwo</td>
+        <td>map.with_options</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='source_ruby'>source.ruby</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='assert_difference "${1:Model}.${2:count}", ${3:1} do&#x000A;  $0&#x000A;end'>
+        <td>asd</td>
+        <td>assert_difference</td>
+      </tr>
+      <tr title='assert(${1:var} = assigns(:${1}), "Cannot find @${1}")&#x000A;$0'>
+        <td>asg</td>
+        <td>assert(var = assigns(:var))</td>
+      </tr>
+      <tr title='assert_no_difference "${1:Model}.${2:count}" do&#x000A;  $0&#x000A;end'>
+        <td>asnd</td>
+        <td>assert_no_difference</td>
+      </tr>
+      <tr title="require File.dirname(__FILE__) + '/../test_helper'&#x000A;&#x000A;class ${1:Model}ControllerTest &lt; ActionController::TestCase&#x000A;	deft$0&#x000A;end">
+        <td>cla</td>
+        <td>Create functional test class</td>
+      </tr>
+      <tr title='class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}}&#x000A;$0&#x000A;end'>
+        <td>class</td>
+        <td>class NAME end</td>
+      </tr>
+      <tr title='class ${1:Model}Controller &lt; ApplicationController&#x000A;  $2&#x000A;end'>
+        <td>con</td>
+        <td>Create controller class</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='source_ruby_rails'>source.ruby.rails</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='after_create '>
+        <td>aftc</td>
+        <td>after_create</td>
+      </tr>
+      <tr title='after_destroy '>
+        <td>aftd</td>
+        <td>after_destroy</td>
+      </tr>
+      <tr title='after_save '>
+        <td>afts</td>
+        <td>after_save</td>
+      </tr>
+      <tr title='after_update '>
+        <td>aftu</td>
+        <td>after_update</td>
+      </tr>
+      <tr title='after_validation '>
+        <td>aftv</td>
+        <td>after_validation</td>
+      </tr>
+      <tr title='after_validation_on_create '>
+        <td>aftvoc</td>
+        <td>after_validation_on_create</td>
+      </tr>
+      <tr title='after_validation_on_update '>
+        <td>aftvou</td>
+        <td>after_validation_on_update</td>
+      </tr>
+      <tr title='class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}} &lt; ActiveRecord::Base&#x000A;$0&#x000A;end'>
+        <td>arc</td>
+        <td>Active Record model</td>
+      </tr>
+      <tr title='assert_redirected_to ${2:action: "${1:index}"}'>
+        <td>art</td>
+        <td>assert_redirected_to</td>
+      </tr>
+      <tr title='assert_redirected_to ${2:${12:parent}_${13:child}_path(${14:@}${15:${12}}, ${16:@}${17:${13}})}'>
+        <td>artnp</td>
+        <td>assert_redirected_to (nested path)</td>
+      </tr>
+      <tr title='assert_redirected_to ${10:${2:parent}_${3:child}_path(${4:@}${5:${2}})}'>
+        <td>artnpp</td>
+        <td>assert_redirected_to (nested path plural)</td>
+      </tr>
+      <tr title='assert_redirected_to ${2:${12:model}_path(${13:@}${14:${12}})}'>
+        <td>artp</td>
+        <td>assert_redirected_to (path)</td>
+      </tr>
+      <tr title='assert_redirected_to ${10:${2:model}s_path}'>
+        <td>artpp</td>
+        <td>assert_redirected_to (path plural)</td>
+      </tr>
+      <tr title='assert_response :${1:success}, @response.body$0'>
+        <td>asre</td>
+        <td>assert_response</td>
+      </tr>
+      <tr title="assert_select '${1:path}'${2:, ${3:text}: ${4:'${5:inner_html}'}}${6: do&#x000A;	$0&#x000A;end}">
+        <td>ass</td>
+        <td>assert_select</td>
+      </tr>
+      <tr title='before_create '>
+        <td>befc</td>
+        <td>before_create</td>
+      </tr>
+      <tr title='before_destroy '>
+        <td>befd</td>
+        <td>before_destroy</td>
+      </tr>
+      <tr title='before_save '>
+        <td>befs</td>
+        <td>before_save</td>
+      </tr>
+      <tr title='before_update '>
+        <td>befu</td>
+        <td>before_update</td>
+      </tr>
+      <tr title='before_validation '>
+        <td>befv</td>
+        <td>before_validation</td>
+      </tr>
+      <tr title='before_validation_on_create '>
+        <td>befvoc</td>
+        <td>before_validation_on_create</td>
+      </tr>
+      <tr title='before_validation_on_update'>
+        <td>befvou</td>
+        <td>before_validation_on_update</td>
+      </tr>
+      <tr title='belongs_to :${1:object}${2:, class_name: "${3:${1/[[:alpha:]]+|(_)/(?1::\u$0)/g}}", foreign_key: "${4:${1}_id}"}'>
+        <td>bt</td>
+        <td>belongs_to</td>
+      </tr>
+      <tr title='cattr_accessor :${0:attr_names}'>
+        <td>crw</td>
+        <td>cattr_accessor</td>
+      </tr>
+      <tr title="find(:all${1:, conditions: ['${2:${3:field} = ?}', ${5:true}]})">
+        <td>fina</td>
+        <td>find(:all)</td>
+      </tr>
+      <tr title="find(:first${1:, conditions: ['${2:${3:field} = ?}', ${5:true}]})">
+        <td>finf</td>
+        <td>find(:first)</td>
+      </tr>
+      <tr title='find(${1:id})'>
+        <td>fini</td>
+        <td>find(id)</td>
+      </tr>
+      <tr title='flash[:${1:notice}] = "${2:Successfully created...}"$0'>
+        <td>flash</td>
+        <td>flash[…]</td>
+      </tr>
+      <tr title='has_and_belongs_to_many :${1:object}${2:, join_table: "${3:table_name}", foreign_key: "${4:${1}_id}"}'>
+        <td>habtm</td>
+        <td>has_and_belongs_to_many</td>
+      </tr>
+      <tr title='has_many :${1:object}s${2:, class_name: "${1}", foreign_key: "${4:reference}_id"}'>
+        <td>hm</td>
+        <td>has_many</td>
+      </tr>
+      <tr title='has_many :${1:object}s${2:, class_name: "${1}", foreign_key: "${4:reference}_id"}, dependent: :destroy$0'>
+        <td>hmd</td>
+        <td>has_many dependent: :destroy</td>
+      </tr>
+      <tr title='has_many :${1:objects}, through: :${2:join_association}${3:, source: :${4:${2}_table_foreign_key_to_${1}_table}}'>
+        <td>hmt</td>
+        <td>has_many (through)</td>
+      </tr>
+      <tr title='has_one :${1:object}${2:, class_name: "${3:${1/[[:alpha:]]+|(_)/(?1::\u$0)/g}}", foreign_key: "${4:${1}_id}"}'>
+        <td>ho</td>
+        <td>has_one</td>
+      </tr>
+      <tr title='logger.debug { "${1:message}" }$0'>
+        <td>logd</td>
+        <td>logger.debug</td>
+      </tr>
+      <tr title='logger.error { "${1:message}" }$0'>
+        <td>loge</td>
+        <td>logger.error</td>
+      </tr>
+      <tr title='logger.fatal { "${1:message}" }$0'>
+        <td>logf</td>
+        <td>logger.fatal</td>
+      </tr>
+      <tr title='logger.info { "${1:message}" }$0'>
+        <td>logi</td>
+        <td>logger.info</td>
+      </tr>
+      <tr title='logger.warn { "${1:message}" }$0'>
+        <td>logw</td>
+        <td>logger.warn</td>
+      </tr>
+      <tr title="scope :name, -&gt;(${1:param}){ ${3:['${4:${5:field} = ?}', ${6:$1}]} }">
+        <td>lsc</td>
+        <td>lambda</td>
+      </tr>
+      <tr title='map(&amp;:${1:id})'>
+        <td>mp</td>
+        <td>map(&:sym_proc)</td>
+      </tr>
+      <tr title='mattr_accessor :${0:attr_names}'>
+        <td>mrw</td>
+        <td>mattr_accessor</td>
+      </tr>
+      <tr title='render action: "${1:action}"'>
+        <td>ra</td>
+        <td>render (action)</td>
+      </tr>
+      <tr title='render action: "${1:action}", layout: "${2:layoutname}"'>
+        <td>ral</td>
+        <td>render (action, layout)</td>
+      </tr>
+      <tr title='RAILS_DEFAULT_LOGGER.debug "${1:message}"$0'>
+        <td>rdb</td>
+        <td>RAILS_DEFAULT_LOGGER.debug</td>
+      </tr>
+      <tr title='redirect_to action: "${1:index}"'>
+        <td>rea</td>
+        <td>redirect_to (action)</td>
+      </tr>
+      <tr title='redirect_to action: "${1:show}", id: ${0:@item}'>
+        <td>reai</td>
+        <td>redirect_to (action, id)</td>
+      </tr>
+      <tr title='redirect_to controller: "${1:items}"'>
+        <td>rec</td>
+        <td>redirect_to (controller)</td>
+      </tr>
+      <tr title='redirect_to controller: "${1:items}", action: "${2:list}"'>
+        <td>reca</td>
+        <td>redirect_to (controller, action)</td>
+      </tr>
+      <tr title='redirect_to controller: "${1:items}", action: "${2:show}", id: ${0:@item}'>
+        <td>recai</td>
+        <td>redirect_to (controller, action, id)</td>
+      </tr>
+      <tr title='redirect_to(${2:${12:parent}_${13:child}_path(${14:@}${15:${12}}, ${16:@}${17:${13}})})'>
+        <td>renp</td>
+        <td>redirect_to (nested path)</td>
+      </tr>
+      <tr title='redirect_to(${2:${10:parent}_${11:child}_path(${12:@}${13:${10}})})'>
+        <td>renpp</td>
+        <td>redirect_to (nested path plural)</td>
+      </tr>
+      <tr title='redirect_to(${2:${12:model}_path(${13:@}${14:${12}})})'>
+        <td>rep</td>
+        <td>redirect_to (path)</td>
+      </tr>
+      <tr title='redirect_to(${2:${10:model}s_path})'>
+        <td>repp</td>
+        <td>redirect_to (path plural)</td>
+      </tr>
+      <tr title='returning ${1:variable} do${2/(^(?&lt;var&gt;\s*[a-z_][a-zA-Z0-9_]*\s*)(,\g&lt;var&gt;)*,?\s*$)|.*/(?1: |)/}${2:v}${2/(^(?&lt;var&gt;\s*[a-z_][a-zA-Z0-9_]*\s*)(,\g&lt;var&gt;)*,?\s*$)|.*/(?1:|)/}&#x000A;	$0&#x000A;end'>
+        <td>returning</td>
+        <td>returning do |variable| … end</td>
+      </tr>
+      <tr title='render file: "${1:filepath}"'>
+        <td>rf</td>
+        <td>render (file)</td>
+      </tr>
+      <tr title='render file: "${1:filepath}", use_full_path: ${2:false}'>
+        <td>rfu</td>
+        <td>render (file, use_full_path)</td>
+      </tr>
+      <tr title='render inline: "${1:&lt;%= &apos;hello&apos; %&gt;}"'>
+        <td>ri</td>
+        <td>render (inline)</td>
+      </tr>
+      <tr title='render inline: "${1:&lt;%= &apos;hello&apos; %&gt;}", locals: { ${2:name}: "${3:value}"$4 }'>
+        <td>ril</td>
+        <td>render (inline, locals)</td>
+      </tr>
+      <tr title='render inline: "${1:&lt;%= &apos;hello&apos; %&gt;}", type: ${2::rxml}'>
+        <td>rit</td>
+        <td>render (inline, type)</td>
+      </tr>
+      <tr title='render layout: "${1:layoutname}"'>
+        <td>rl</td>
+        <td>render (layout)</td>
+      </tr>
+      <tr title='render nothing: ${1:true}'>
+        <td>rn</td>
+        <td>render (nothing)</td>
+      </tr>
+      <tr title='render nothing: ${1:true}, status: ${2:401}'>
+        <td>rns</td>
+        <td>render (nothing, status)</td>
+      </tr>
+      <tr title='render partial: "${1:item}"'>
+        <td>rp</td>
+        <td>render (partial)</td>
+      </tr>
+      <tr title='render partial: "${1:item}", collection: ${2:@$1s}'>
+        <td>rpc</td>
+        <td>render (partial, collection)</td>
+      </tr>
+      <tr title='render partial: "${1:item}", locals: { ${2:$1}: ${3:@$1}$0 }'>
+        <td>rpl</td>
+        <td>render (partial, locals)</td>
+      </tr>
+      <tr title='render partial: "${1:item}", object: ${2:@$1}'>
+        <td>rpo</td>
+        <td>render (partial, object)</td>
+      </tr>
+      <tr title='render partial: "${1:item}", status: ${2:500}'>
+        <td>rps</td>
+        <td>render (partial, status)</td>
+      </tr>
+      <tr title='render text: "${1:text to render...}"'>
+        <td>rt</td>
+        <td>render (text)</td>
+      </tr>
+      <tr title='render text: "${1:text to render...}", layout: "${2:layoutname}"'>
+        <td>rtl</td>
+        <td>render (text, layout)</td>
+      </tr>
+      <tr title='render text: "${1:text to render...}", layout: ${2:true}'>
+        <td>rtlt</td>
+        <td>render (text, layout: true)</td>
+      </tr>
+      <tr title='render text: "${1:text to render...}", status: ${2:401}'>
+        <td>rts</td>
+        <td>render (text, status)</td>
+      </tr>
+      <tr title='render :update do |${2:page}|&#x000A;	$2.$0&#x000A;end'>
+        <td>ru</td>
+        <td>render (update)</td>
+      </tr>
+      <tr title="scope :name${1:, joins: :${2:table}}, conditions: ${3:['${4:${5:field} = ?}', ${6:true}]}">
+        <td>sc</td>
+        <td>scope</td>
+      </tr>
+      <tr title='validates_associated :${1:attribute}${2:, on: :${3:create}}'>
+        <td>va</td>
+        <td>validates_associated</td>
+      </tr>
+      <tr title='validates_associated :${1:attribute}${2:, on: :${3:create}, if: proc { |obj| ${5:obj.condition?} }}'>
+        <td>vaif</td>
+        <td>validates_associated if</td>
+      </tr>
+      <tr title='validates_acceptance_of :${1:terms}${2:${3:, accept: "${4:1}"}${5:, message: "${6:You must accept the terms of service}"}}'>
+        <td>vao</td>
+        <td>validates_acceptance_of</td>
+      </tr>
+      <tr title='validates_acceptance_of :${1:terms}${2:${3:, accept: "${4:1}"}${5:, message: "${6:You must accept the terms of service}"}}, if: proc { |obj| ${7:obj.condition?} }}'>
+        <td>vaoif</td>
+        <td>validates_acceptance_of if</td>
+      </tr>
+      <tr title='validates_confirmation_of :${1:attribute}${2:, on: :${3:create}, message: "${4:should match confirmation}"}'>
+        <td>vc</td>
+        <td>validates_confirmation_of</td>
+      </tr>
+      <tr title='validates_confirmation_of :${1:attribute}${2:, on: :${3:create}, message: "${4:should match confirmation}", if: proc { |obj| ${5:obj.condition?} }}'>
+        <td>vcif</td>
+        <td>validates_confirmation_of if</td>
+      </tr>
+      <tr title='validates_exclusion_of :${1:attribute}${2:, in: ${3:%w( ${4:mov avi} )}, on: :${5:create}, message: "${6:extension %s is not allowed}"}'>
+        <td>ve</td>
+        <td>validates_exclusion_of</td>
+      </tr>
+      <tr title='validates_exclusion_of :${1:attribute}${2:, in: ${3:%w( ${4:mov avi} )}, on: :${5:create}, message: "${6:extension %s is not allowed}"}, if: proc { |obj| ${7:obj.condition?} }}'>
+        <td>veif</td>
+        <td>validates_exclusion_of if</td>
+      </tr>
+      <tr title='verify only: [:$1], method: :post, render: { status: 500, text: "use HTTP-POST" }'>
+        <td>verify</td>
+        <td>verify — render</td>
+      </tr>
+      <tr title="verify only: [:$1], session: :user, params: :id, redirect_to: { action: '${2:index}' }">
+        <td>verify</td>
+        <td>verify — redirect</td>
+      </tr>
+      <tr title='validates_format_of :${1:attribute}, with: /${2:^[${3:\w\d}]+\$}/${4:, on: :${5:create}, message: "${6:is invalid}"}'>
+        <td>vf</td>
+        <td>validates_format_of</td>
+      </tr>
+      <tr title='validates_format_of :${1:attribute}, with: /${2:^[${3:\w\d}]+\$}/${4:, on: :${5:create}, message: "${6:is invalid}"}, if: proc { |obj| ${7:obj.condition?} }}'>
+        <td>vfif</td>
+        <td>validates_format_of if</td>
+      </tr>
+      <tr title='validates_inclusion_of :${1:attribute}${2:, in: ${3:%w( ${4:mov avi} )}, on: :${5:create}, message: "${6:extension %s is not included in the list}"}'>
+        <td>vi</td>
+        <td>validates_inclusion_of</td>
+      </tr>
+      <tr title='validates_inclusion_of :${1:attribute}${2:, in: ${3:%w( ${4:mov avi} )}, on: :${5:create}, message: "${6:extension %s is not included in the list}"}, if: proc { |obj| ${7:obj.condition?} }}'>
+        <td>viif</td>
+        <td>validates_inclusion_of if</td>
+      </tr>
+      <tr title='validates_length_of :${1:attribute}, within: ${2:3..20}${3:, on: :${4:create}, message: "${5:must be present}"}'>
+        <td>vl</td>
+        <td>validates_length_of</td>
+      </tr>
+      <tr title='validates_length_of :${1:attribute}, within: ${2:3..20}${3:, on: :${4:create}, message: "${5:must be present}"}, if: proc { |obj| ${6:obj.condition?} }}'>
+        <td>vlif</td>
+        <td>validates_length_of if</td>
+      </tr>
+      <tr title='validates_numericality_of :${1:attribute}${2:, on: :${3:create}, message: "${4:is not a number}"}'>
+        <td>vn</td>
+        <td>validates_numericality_of</td>
+      </tr>
+      <tr title='validates_numericality_of :${1:attribute}${2:, on: :${3:create}, message: "${4:is not a number}"}, if: proc { |obj| ${5:obj.condition?} }}'>
+        <td>vnif</td>
+        <td>validates_numericality_of if</td>
+      </tr>
+      <tr title='validates_presence_of :${1:attribute}${2:, on: :${3:create}, message: "${4:can&apos;t be blank}"}'>
+        <td>vp</td>
+        <td>validates_presence_of</td>
+      </tr>
+      <tr title='validates_presence_of :${1:attribute}${2:, on: :${3:create}, message: "${4:can&apos;t be blank}"}, if: proc { |obj| ${5:obj.condition?} }}'>
+        <td>vpif</td>
+        <td>validates_presence_of if</td>
+      </tr>
+      <tr title='validates_uniqueness_of :${1:attribute}${2:, on: :${3:create}, message: "${4:must be unique}"}'>
+        <td>vu</td>
+        <td>validates_uniqueness_of</td>
+      </tr>
+      <tr title='validates_uniqueness_of :${1:attribute}${2:, on: :${3:create}, message: "${4:must be unique}", if: proc { |obj| ${6:obj.condition?} }}'>
+        <td>vuif</td>
+        <td>validates_uniqueness_of if</td>
+      </tr>
+      <tr title='xhr :delete, :${1:destroy}, id: ${2:1}$0'>
+        <td>xdelete</td>
+        <td>xhr delete</td>
+      </tr>
+      <tr title='xhr :get, :${1:show}${2:, id: ${3:1}}$0'>
+        <td>xget</td>
+        <td>xhr get</td>
+      </tr>
+      <tr title='xhr :post, :${1:create}, ${2:object}: { $3 }'>
+        <td>xpost</td>
+        <td>xhr post</td>
+      </tr>
+      <tr title='xhr :put, :${1:update}, id: ${2:1}, ${3:object}: { $4 }$0'>
+        <td>xput</td>
+        <td>xhr put</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='source_yaml'>source.yaml</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='\$LABEL'>
+        <td>$L</td>
+        <td>$LABEL</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}Fixtures.identify(:${1:name})${TM_RAILS_TEMPLATE_END_RUBY_EXPR}$0'>
+        <td>fi</td>
+        <td><%= Fixtures.identify(:symbol) %></td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='text_html_ruby'>text.html.ruby</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='&lt;% end -%&gt;'>
+        <td>end</td>
+        <td>end (ERB)</td>
+      </tr>
+      <tr title='&lt;% if !${1:list}.blank? %&gt;&#x000A;  &lt;% for ${2:item} in ${1} %&gt;&#x000A;    $3&#x000A;  &lt;% end %&gt;&#x000A;&lt;% else %&gt;&#x000A;  $4&#x000A;&lt;% end %&gt;'>
+        <td>for</td>
+        <td>for loop in rhtml</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}javascript_include_tag ${1::all}${2:, cache: ${3:true}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>jit</td>
+        <td>javascript_include_tag</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}stylesheet_link_tag {1::all}${2:, media: ${3:"all"}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>slt</td>
+        <td>stylesheet_link_tag</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='text_html_ruby__text_haml'>text.html.ruby, text.haml</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.text_area :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.text_area (ffta)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.text_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.text_field (fftf)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.check_box :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.check_box (ffcb)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.submit "${1:Submit}"${2:, disable_with: &apos;${3:$1ing...}&apos;}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.submit (ffs)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.file_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.file_field (ffff)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.radio_box :${1:attribute}, :${2:tag_value}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.radio_box (ffrb)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.hidden_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.hidden_field (ffhf)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.label :${1:attribute}${2:, "${3:${1/[[:alpha:]]+|(_)/(?1: :\u$0)/g}}"}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.label (ffl)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.password_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>f.</td>
+        <td>f.password_field (ffpf)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_INLINE}form_for @${1:model} do |f|${TM_RAILS_TEMPLATE_END_RUBY_INLINE}&#x000A;  $0&#x000A;${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}'>
+        <td>ff</td>
+        <td>form_for</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.check_box :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ffcb</td>
+        <td>form_for check_box</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}error_messages_for :${1:model}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}&#x000A;&#x000A;${TM_RAILS_TEMPLATE_START_RUBY_INLINE}form_for @${2:$1} do |f|${TM_RAILS_TEMPLATE_END_RUBY_INLINE}&#x000A;  $0&#x000A;${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}'>
+        <td>ffe</td>
+        <td>form_for with errors</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.file_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ffff</td>
+        <td>form_for file_field</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.hidden_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ffhf</td>
+        <td>form_for hidden_field</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.label :${1:attribute}${2:, "${3:${1/[[:alpha:]]+|(_)/(?1: :\u$0)/g}}"}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ffl</td>
+        <td>form_for label</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.password_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ffpf</td>
+        <td>form_for password_field</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.radio_box :${1:attribute}, :${2:tag_value}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ffrb</td>
+        <td>form_for radio_box</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.submit "${1:Submit}"${2:, disable_with: &apos;${3:$1ing...}&apos;}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ffs</td>
+        <td>form_for submit</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.text_area :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ffta</td>
+        <td>form_for text_area</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}f.text_field :${1:attribute}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>fftf</td>
+        <td>form_for text_field</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_INLINE}form_tag(${1::action: "${5:update}"}${6:, {:${8:class}: "${9:form}"\}}) do${TM_RAILS_TEMPLATE_END_RUBY_EXPR}&#x000A;  $0&#x000A;${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}'>
+        <td>ft</td>
+        <td>form_tag</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}image_submit_tag("${1:agree.png}"${2:${3:, id: "${4:${1/^(\w+)(\.\w*)?$/$1/}}"}${5:, name: "${6:${1/^(\w+)(\.\w*)?$/$1/}}"}${7:, class: "${8:${1/^(\w+)(\.\w*)?$/$1/}-button}"}${9:, disabled: ${10:false}}})${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>ist</td>
+        <td>image_submit_tag</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to "${1:link text...}", action: "${2:index}"${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>lia</td>
+        <td>link_to (action)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to "${1:link text...}", action: "${2:edit}", id: ${3:@item}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>liai</td>
+        <td>link_to (action, id)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to "${1:link text...}", controller: "${2:items}"${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>lic</td>
+        <td>link_to (controller)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to "${1:link text...}", controller: "${2:items}", action: "${3:index}"${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>lica</td>
+        <td>link_to (controller, action)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to "${1:link text...}", controller: "${2:items}", action: "${3:edit}", id: ${4:@item}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>licai</td>
+        <td>link_to (controller, action, id)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:model}.${2:name}, ${3:${4:$1}_path(${14:$1})}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>lim</td>
+        <td>link_to model</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:"${2:link text...}"}, ${3:${12:parent}_${13:child}_path(${14:@}${15:${12}}, ${16:@}${17:${13}})}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>linp</td>
+        <td>link_to (nested path)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:"${2:link text...}"}, ${3:${10:parent}_${11:child}_path(${12:@}${13:${10}})}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>linpp</td>
+        <td>link_to (nested path plural)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:"${2:link text...}"}, ${3:${12:model}_path(${13:@}${14:${12}})}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>lip</td>
+        <td>link_to (path)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}link_to ${1:"${2:link text...}"}, ${3:${4:model}s_path}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>lipp</td>
+        <td>link_to (path plural)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}submit_tag "${1:Save changes}"${2:, id: "${3:submit}"}${4:, name: "${5:$3}"}${6:, class: "${7:form_$3}"}${8:, disabled: ${9:false}}${10:, disable_with: "${11:Please wait...}"}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>st</td>
+        <td>submit_tag</td>
+      </tr>
+    </table>
+  </section>
+</body>
