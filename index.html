@@ -615,25 +615,25 @@ section{
         <th>Tab trigger</th>
         <th>Description</th>
       </tr>
-      <tr title="${1:map}.${2:connect} '${3::controller/:action/:id}'">
-        <td>map</td>
-        <td>map.named_route</td>
+      <tr title='resources :${1:res_name}'>
+        <td>res</td>
+        <td>resources :resource_name</td>
       </tr>
-      <tr title='${1:map}.catch_all "*${2:anything}", controller: "${3:default}", action: "${4:error}"'>
-        <td>mapca</td>
-        <td>map.catch_all</td>
+      <tr title='resources :${1:res_name} do&#x000A;  $2&#x000A;end'>
+        <td>resd</td>
+        <td>resources with an empty params block</td>
       </tr>
-      <tr title='${1:map}.resource :${2:resource}${10: do |${11:$2}|&#x000A;  $0&#x000A;end}'>
-        <td>mapr</td>
-        <td>map.resource</td>
+      <tr title='resources :${1:res_name} do&#x000A;  collection do&#x000A;    ${2:get} :${3:action}&#x000A;  end&#x000A;end'>
+        <td>resdc</td>
+        <td>resources with a custom collection block</td>
       </tr>
-      <tr title='${1:map}.resources :${2:resource}${10: do |${11:$2}|&#x000A;  $0&#x000A;end}'>
-        <td>maprs</td>
-        <td>map.resources</td>
+      <tr title='resources :${1:res_name} do&#x000A;  member do&#x000A;    ${2:get} :${3:action}&#x000A;  end&#x000A;end'>
+        <td>resdm</td>
+        <td>resources with a custom member block</td>
       </tr>
-      <tr title="${1:map}.with_options ${2:controller}: '${3:thing}' do |${4:$3}|&#x000A;  $0&#x000A;end">
-        <td>mapwo</td>
-        <td>map.with_options</td>
+      <tr title='resources :${1:res_name}, only: [:${2:index}]'>
+        <td>reso</td>
+        <td>resources :name, only: [:actions]</td>
       </tr>
     </table>
   </section>
