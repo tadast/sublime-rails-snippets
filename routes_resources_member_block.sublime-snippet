@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[resources :${1:res_name} do
+  member do
+    ${2:get} :${3:action}
+  end
+end]]></content>
+    <tabTrigger>resdm</tabTrigger>
+    <scope>meta.rails.routes</scope>
+    <description>resources with a custom member block</description>
+</snippet>
