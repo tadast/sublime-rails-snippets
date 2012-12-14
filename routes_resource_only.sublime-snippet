@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[resources :${1:res_name}, only: [:${2:index}]]]></content>
+    <tabTrigger>reso</tabTrigger>
+    <scope>meta.rails.routes</scope>
+    <description>resources :name, only: [:actions]</description>
+</snippet>

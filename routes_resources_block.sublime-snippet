@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[resources :${1:res_name} do
+  $2
+end]]></content>
+    <tabTrigger>resd</tabTrigger>
+    <scope>meta.rails.routes</scope>
+    <description>resources with an empty params block</description>
+</snippet>
