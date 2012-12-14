@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <head>
+  <meta charset='utf-8' />
+  <title>Snipcheat cheat-sheet</title>
   <style>
     /*! normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -335,7 +337,7 @@ nav{
   left: 0;
   top: 0;
   width: 252px;
-  max-height: 100%;
+  height: 100%;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -351,6 +353,9 @@ section{
 .scope_links li a{
   display: block;
   padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .scope_links li:nth-child(odd) a{
   background: #e8edff;
@@ -364,37 +369,37 @@ section{
   <nav>
     <h2 class='hpadded'>Scopes</h2>
     <ul class='scope_links'>
-      <li>
+      <li title='meta.rails.controller'>
         <a href='#meta_rails_controller'>meta.rails.controller</a>
       </li>
-      <li>
+      <li title='meta.rails.functional_test'>
         <a href='#meta_rails_functional_test'>meta.rails.functional_test</a>
       </li>
-      <li>
+      <li title='meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table'>
         <a href='#meta_rails_migration___meta_rails_migration_create_table___meta_rails_migration_change_table'>meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table</a>
       </li>
-      <li>
+      <li title='meta.rails.migration.create_table'>
         <a href='#meta_rails_migration_create_table'>meta.rails.migration.create_table</a>
       </li>
-      <li>
+      <li title='meta.rails.migration.create_table, meta.rails.migration.change_table'>
         <a href='#meta_rails_migration_create_table__meta_rails_migration_change_table'>meta.rails.migration.create_table, meta.rails.migration.change_table</a>
       </li>
-      <li>
+      <li title='meta.rails.routes'>
         <a href='#meta_rails_routes'>meta.rails.routes</a>
       </li>
-      <li>
+      <li title='source.ruby'>
         <a href='#source_ruby'>source.ruby</a>
       </li>
-      <li>
+      <li title='source.ruby.rails'>
         <a href='#source_ruby_rails'>source.ruby.rails</a>
       </li>
-      <li>
+      <li title='source.yaml'>
         <a href='#source_yaml'>source.yaml</a>
       </li>
-      <li>
+      <li title='text.html.ruby'>
         <a href='#text_html_ruby'>text.html.ruby</a>
       </li>
-      <li>
+      <li title='text.html.ruby, text.haml'>
         <a href='#text_html_ruby__text_haml'>text.html.ruby, text.haml</a>
       </li>
     </ul>
