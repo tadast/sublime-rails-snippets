@@ -237,7 +237,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(^\s*)ActionController::Routing::Routes</string>
+			<string>::Application.routes.draw</string>
 			<key>comment</key>
 			<string>Uses ActionController::Routing::Routes to determine it is a routes file; includes 'source.ruby' to avoid infinite recursion</string>
 			<key>end</key>
