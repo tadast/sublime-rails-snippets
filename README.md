@@ -31,6 +31,8 @@ Regardless of which way of installation you choose, please backup the old Rails 
     ➜ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
     ➜ git clone https://github.com/tadast/sublime-rails-snippets.git Rails
 
+It is important to clone it into a folder called Rails. Some other snippets have hardcoded dependencies pointing to that path. See troubleshooting.
+
 ## From an archive
 
 * Go to the downloads section
