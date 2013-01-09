@@ -55,3 +55,8 @@ For all the changes to take effect you may also need to quit Sublime and delete 
     rm ~/Library/Application\ Support/Sublime\ Text\ 2/Settings/Session.sublime_session
     
 This will lose all session data (Sublime will 'forget' open filetabs, projects, search history etc.)
+
+#### Sublime picks Ruby syntax 
+
+You may need to tell Sublime to prefer Rails
+View -> Syntax -> Open all with current extension as... and pick `Rails` of Ruby on Rails snippets
