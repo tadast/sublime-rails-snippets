@@ -32,6 +32,8 @@ Look for "Ruby on Rails snippets". [Here's how to install packages](http://wbond
 
 ### Troubleshooting
 
+#### Can't find *.tmLanguage
+
 If Sublime complains it can't find `Ruby on Rails.tmLanguage`, chances are you are using [this hack](https://gist.github.com/925008).
 You'll need to change the path where it looks for that file. Here's the [forked version which works with this plugin](https://gist.github.com/4161901).
 
