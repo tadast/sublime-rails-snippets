@@ -50,3 +50,8 @@ You may also need to change `Packages/(DetectSyntax|User)/DetectSyntax.sublime-s
       ]
     }
 
+For all the changes to take effect you may also need to quit Sublime and delete Sublime's session cache.
+
+    rm ~/Library/Application\ Support/Sublime\ Text\ 2/Settings/Session.sublime_session
+    
+This will lose all session data (Sublime will 'forget' open filetabs, projects, search history etc.)
