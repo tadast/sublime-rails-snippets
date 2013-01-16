@@ -457,13 +457,21 @@ section{
         <th>Tab trigger</th>
         <th>Description</th>
       </tr>
-      <tr title='remove_column :${1:table}, :${2:column}${3: [press tab twice to generate add_column]}'>
+      <tr title='add_column :${1:table}, :${2:column}, :${3:string}, ${4:limit}: ${5:255}'>
         <td>mcol</td>
-        <td>Remove / Add Column</td>
+        <td>Add Column</td>
       </tr>
-      <tr title='drop_table :${1:table}${2: [press tab twice to generate create_table]}'>
+      <tr title='remove_column :${1:table}, :${2:column}'>
+        <td>mcol</td>
+        <td>Remove Column</td>
+      </tr>
+      <tr title='create_table :${1:table} do |t|&#x000A;  t.${2:string} :${3:name}&#x000A;&#x000A;  t.timestamps&#x000A;end'>
         <td>mtab</td>
-        <td>Drop / Create Table</td>
+        <td>Create Table</td>
+      </tr>
+      <tr title='drop_table :${1:table}'>
+        <td>mtab</td>
+        <td>Drop Table</td>
       </tr>
     </table>
   </section>
@@ -702,13 +710,13 @@ section{
         <td>aftv</td>
         <td>after_validation</td>
       </tr>
-      <tr title='after_validation_on_create '>
+      <tr title='after_validation ${1:validation_method}, on: :create'>
         <td>aftvoc</td>
-        <td>after_validation_on_create</td>
+        <td>after_validation on create</td>
       </tr>
-      <tr title='after_validation_on_update '>
+      <tr title='after_validation ${1:validation_method}, on: :update'>
         <td>aftvou</td>
-        <td>after_validation_on_update</td>
+        <td>after_validation on update</td>
       </tr>
       <tr title='class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}} &lt; ActiveRecord::Base&#x000A;$0&#x000A;end'>
         <td>arc</td>
@@ -762,13 +770,13 @@ section{
         <td>befv</td>
         <td>before_validation</td>
       </tr>
-      <tr title='before_validation_on_create '>
+      <tr title='before_validation ${1:validation_method}, on: :create'>
         <td>befvoc</td>
-        <td>before_validation_on_create</td>
+        <td>before_validation on create</td>
       </tr>
-      <tr title='before_validation_on_update'>
+      <tr title='before_validation ${1:validation_method}, on: :update'>
         <td>befvou</td>
-        <td>before_validation_on_update</td>
+        <td>before_validation on update</td>
       </tr>
       <tr title='belongs_to :${1:object}${2:, class_name: "${3:${1/[[:alpha:]]+|(_)/(?1::\u$0)/g}}", foreign_key: "${4:${1}_id}"}'>
         <td>bt</td>
@@ -840,7 +848,7 @@ section{
       </tr>
       <tr title='map(&amp;:${1:id})'>
         <td>mp</td>
-        <td>map(&:sym_proc)</td>
+        <td>map(&amp;:sym_proc)</td>
       </tr>
       <tr title='mattr_accessor :${0:attr_names}'>
         <td>mrw</td>
@@ -1093,7 +1101,7 @@ section{
       </tr>
       <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}Fixtures.identify(:${1:name})${TM_RAILS_TEMPLATE_END_RUBY_EXPR}$0'>
         <td>fi</td>
-        <td><%= Fixtures.identify(:symbol) %></td>
+        <td>&lt;%= Fixtures.identify(:symbol) %&gt;</td>
       </tr>
     </table>
   </section>
@@ -1104,7 +1112,7 @@ section{
         <th>Tab trigger</th>
         <th>Description</th>
       </tr>
-      <tr title='&lt;% end -%&gt;'>
+      <tr title='&lt;% end %&gt;'>
         <td>end</td>
         <td>end (ERB)</td>
       </tr>
