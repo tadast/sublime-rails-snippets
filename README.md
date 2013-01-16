@@ -6,7 +6,7 @@ The repo aims to replace the default Rails snippets from Sublime Text 2 and make
 
 ## Backup
 
-:warning: This package replaces the default Sublime Rails snippets. :warning:
+:warning: This package replaces the default Sublime Rails snippets. If you work on Rails 2 and ruby 1.8 more often than not, perhaps you shouldn't update :warning:
 
 Regardless of which way of installation you choose, please backup the old Rails snippets directory. You don't want to have both this and the original snippets installed.
 
