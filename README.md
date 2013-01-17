@@ -10,13 +10,17 @@ The repo aims to replace the default Rails snippets from Sublime Text 2 and make
 
 Regardless of which way of installation you choose, please backup the old Rails snippets directory. You don't want to have both this and the original snippets installed.
 
-    ➜ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
-    ➜ mv Rails ~/.RailsSublimeBackup
+```bash
+➜ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+➜ mv Rails ~/.RailsSublimeBackup
+```
 
 ## From Git (Recommended)
 
-    ➜ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
-    ➜ git clone https://github.com/tadast/sublime-rails-snippets.git Rails
+```bash
+➜ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+➜ git clone https://github.com/tadast/sublime-rails-snippets.git Rails
+```
 
 It is important to clone it into a folder called Rails. Some Sublime plugins have hardcoded dependencies pointing to that path. See troubleshooting.
 
@@ -35,7 +39,9 @@ Look for "Ruby on Rails snippets". [Here's how to install packages](http://wbond
 First of all, remove the original Rails directory (see [Backup](#backup)).
 Then quit Sublime and delete Sublime's session cache.
 
-    rm ~/Library/Application\ Support/Sublime\ Text\ 2/Settings/Session.sublime_session
+```bash
+rm ~/Library/Application\ Support/Sublime\ Text\ 2/Settings/Session.sublime_session
+```
 
 This will lose all session data (Sublime will 'forget' open filetabs, projects, search history etc.)
 
@@ -49,18 +55,20 @@ You'll need to change the path where it looks for that file. Here's the [forked 
 
 You may also need to change `Packages/(DetectSyntax|User)/DetectSyntax.sublime-settings` to replace/include this rule
 
-    {
-      "name": "Ruby on Rails snippets/Ruby Haml",
-      "rules": [
-        {"file_name": ".*\\.haml$"}
-      ]
-    },
-    {
-      "name": "Ruby on Rails snippets/Ruby on Rails",
-      "rules": [
-        {"function": {"name": "is_rails_file"}}
-      ]
-    }
+```json
+{
+  "name": "Ruby on Rails snippets/Ruby Haml",
+  "rules": [
+    {"file_name": ".*\\.haml$"}
+  ]
+},
+{
+  "name": "Ruby on Rails snippets/Ruby on Rails",
+  "rules": [
+    {"function": {"name": "is_rails_file"}}
+  ]
+}
+```
 
 `Ruby on Rails snippets` is a default instalation directory for Package Control.
 If you installed in a different directory, change the path accordingly
