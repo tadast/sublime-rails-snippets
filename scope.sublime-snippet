@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[scope :name${1:, joins: :${2:table}}, conditions: ${3:['${4:${5:field} = ?}', ${6:true}]}
+    <content><![CDATA[scope :${1:name}, ->{ where(${2:attr:} ${3:value}) }
 ]]></content>
     <tabTrigger>sc</tabTrigger>
     <scope>source.ruby.rails</scope>

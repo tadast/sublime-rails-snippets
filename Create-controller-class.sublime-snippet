@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[class ${1:Model}Controller < ApplicationController
+    <content><![CDATA[class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}}sController < ApplicationController
   $2
 end]]></content>
     <tabTrigger>con</tabTrigger>

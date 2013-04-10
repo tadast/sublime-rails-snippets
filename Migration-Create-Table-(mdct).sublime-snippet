@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[create_table :${1:table} do |t|
+  t.${2:string} :${3:name}
+
+  t.timestamps
+end
+]]></content>
+    <tabTrigger>mtab</tabTrigger>
+    <scope>meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table</scope>
+    <description>Create Table</description>
+</snippet>

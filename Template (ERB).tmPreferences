@@ -38,7 +38,7 @@
                 <key>name</key>
                 <string>TM_RAILS_TEMPLATE_END_RUBY_BLOCK</string>
                 <key>value</key>
-                <string>&lt;% end -%&gt;</string>
+                <string>&lt;% end %&gt;</string>
             </dict>
         </array>
     </dict>

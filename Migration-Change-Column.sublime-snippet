@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[change_column :${1:table}, :${2:column}, :${3:string}${4:, ${5:limit}: ${6:255}}]]></content>
+    <tabTrigger>mcol</tabTrigger>
+    <scope>meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table</scope>
+    <description>Change Column</description>
+</snippet>

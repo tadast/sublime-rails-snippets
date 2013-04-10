@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[remove_index :${1:table}, name: :${2:index_name}]]></content>
+    <tabTrigger>mind</tabTrigger>
+    <scope>meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table</scope>
+    <description>Remove Index</description>
+</snippet>
