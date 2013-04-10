@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_EXPR}stylesheet_link_tag ${1::application}${2:, media: ${3:"all"}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}]]></content>
+    <content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_EXPR}stylesheet_link_tag ${1::application}${2:, media: "${3:all}"}${4:, cache: ${5:true}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}]]></content>
     <tabTrigger>slt</tabTrigger>
     <scope>text.html.ruby, text.haml</scope>
     <description>stylesheet_link_tag</description>
