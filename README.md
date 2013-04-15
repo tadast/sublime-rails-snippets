@@ -77,3 +77,13 @@ If you installed in a different directory, change the path accordingly
 
 You may need to tell Sublime to prefer Rails
 `View -> Syntax -> Open all with current extension as...` and pick `Rails` of Ruby on Rails snippets
+
+
+# How to contribute
+
+1. Fork it
+2. Create your feature branch for each group of snippet changes that could be merged individually (`git checkout -b my-new-snippet`)
+3. Commit your changes (`git commit -am 'Add some snippet [tab_trigger]'`)
+4. Commit messages should start with a verb in present simple tense and have all affected tab triggers in square brackets e.g. "Add a snippets for partial rendering [rpc, rpo]"
+5. Push to the branch (`git push origin my-new-snippet`)
+6. Create new Pull Request

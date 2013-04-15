@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[add_index :${1:table}, :${2:columns}${4:, ${5:name}: "${6:custom_index_name}"}]]></content>
+    <tabTrigger>mind</tabTrigger>
+    <scope>meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table</scope>
+    <description>Add Index</description>
+</snippet>
