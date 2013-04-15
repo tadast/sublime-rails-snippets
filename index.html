@@ -393,6 +393,9 @@
       <li title='source.ruby.rails'>
         <a href='#source_ruby_rails'>source.ruby.rails</a>
       </li>
+      <li title='source.ruby.rails, text.haml'>
+        <a href='#source_ruby_rails__text_haml'>source.ruby.rails, text.haml</a>
+      </li>
       <li title='source.yaml'>
         <a href='#source_yaml'>source.yaml</a>
       </li>
@@ -457,13 +460,29 @@
         <th>Tab trigger</th>
         <th>Description</th>
       </tr>
-      <tr title='add_column :${1:table}, :${2:column}, :${3:string}, ${4:limit}: ${5:255}'>
+      <tr title='add_column :${1:table}, :${2:column}, :${3:string}${4:, ${5:limit}: ${6:255}}'>
         <td>mcol</td>
         <td>Add Column</td>
       </tr>
       <tr title='remove_column :${1:table}, :${2:column}'>
         <td>mcol</td>
         <td>Remove Column</td>
+      </tr>
+      <tr title='change_column :${1:table}, :${2:column}, :${3:string}${4:, ${5:limit}: ${6:255}}'>
+        <td>mcol</td>
+        <td>Change Column</td>
+      </tr>
+      <tr title='rename_column :${1:table}, :${2:old_column_name}, :${3:new_column_name}'>
+        <td>mcol</td>
+        <td>Rename Column</td>
+      </tr>
+      <tr title='remove_index :${1:table}, name: :${2:index_name}'>
+        <td>mind</td>
+        <td>Remove Index</td>
+      </tr>
+      <tr title='add_index :${1:table}, :${2:columns}${4:, ${5:name}: "${6:custom_index_name}"}'>
+        <td>mind</td>
+        <td>Add Index</td>
       </tr>
       <tr title='create_table :${1:table} do |t|&#x000A;  t.${2:string} :${3:name}&#x000A;&#x000A;  t.timestamps&#x000A;end'>
         <td>mtab</td>
@@ -472,10 +491,6 @@
       <tr title='drop_table :${1:table}'>
         <td>mtab</td>
         <td>Drop Table</td>
-      </tr>
-      <tr title='rename_column :${1:table}, :${2:old_column_name}, :${3:new_column_name}'>
-        <td>recol</td>
-        <td>Rename Column</td>
       </tr>
     </table>
   </section>
@@ -681,9 +696,13 @@
         <td>class</td>
         <td>class NAME end</td>
       </tr>
-      <tr title='class ${1:Model}Controller &lt; ApplicationController&#x000A;  $2&#x000A;end'>
+      <tr title='class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}}sController &lt; ApplicationController&#x000A;  $2&#x000A;end'>
         <td>con</td>
         <td>Create controller class</td>
+      </tr>
+      <tr title='def initialize(${1:attribute})&#x000A;  @${1} = ${1}&#x000A;end'>
+        <td>defi</td>
+        <td>Define initializer method</td>
       </tr>
     </table>
   </section>
@@ -946,22 +965,6 @@
         <td>rns</td>
         <td>render (nothing, status)</td>
       </tr>
-      <tr title='render partial: "${1:item}"'>
-        <td>rp</td>
-        <td>render (partial)</td>
-      </tr>
-      <tr title='render partial: "${1:item}", collection: ${2:@$1s}'>
-        <td>rpc</td>
-        <td>render (partial, collection)</td>
-      </tr>
-      <tr title='render partial: "${1:item}", locals: { ${2:$1}: ${3:@$1}$0 }'>
-        <td>rpl</td>
-        <td>render (partial, locals)</td>
-      </tr>
-      <tr title='render partial: "${1:item}", object: ${2:@$1}'>
-        <td>rpo</td>
-        <td>render (partial, object)</td>
-      </tr>
       <tr title='render partial: "${1:item}", status: ${2:500}'>
         <td>rps</td>
         <td>render (partial, status)</td>
@@ -1097,6 +1100,27 @@
       <tr title='xhr :put, :${1:update}, id: ${2:1}, ${3:object}: { $4 }$0'>
         <td>xput</td>
         <td>xhr put</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h2 class='hpadded' id='source_ruby_rails__text_haml'>source.ruby.rails, text.haml</h2>
+    <table class='snippets'>
+      <tr>
+        <th>Tab trigger</th>
+        <th>Description</th>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}render partial: "${1:item}"${2:, locals: ${3:var}: @${3:var}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>rp</td>
+        <td>render partial</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}render partial: "${1:item}", collection: ${2:@$1s}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>rpc</td>
+        <td>render (partial, collection)</td>
+      </tr>
+      <tr title='${TM_RAILS_TEMPLATE_START_RUBY_EXPR}render partial: "${1:item}", object: ${2:@$1}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}'>
+        <td>rpo</td>
+        <td>render (partial, object)</td>
       </tr>
     </table>
   </section>
