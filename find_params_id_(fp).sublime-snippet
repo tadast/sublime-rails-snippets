@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[find(params[:${1:id}])]]></content>
+    <tabTrigger>fp</tabTrigger>
+    <scope>meta.rails.controller</scope>
+    <description>find(params[:id])</description>
+</snippet>
