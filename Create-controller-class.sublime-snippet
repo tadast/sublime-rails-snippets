@@ -1,6 +1,6 @@
 <snippet>
-    <content><![CDATA[class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}}sController < ApplicationController
-  $2
+    <content><![CDATA[class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}} < ${2:Application}Controller
+  $3
 end]]></content>
     <tabTrigger>con</tabTrigger>
     <scope>source.ruby</scope>
