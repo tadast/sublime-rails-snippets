@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[accepts_nested_attributes_for :${1:relationship}, ${2:reject_if: ->(attributes){ attributes['name'].blank? \}}${3, :allow_destroy: true}]]></content>
+    <tabTrigger>anaf</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>accepts_nested_attributes_for</description>
+</snippet>
