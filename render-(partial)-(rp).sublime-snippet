@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_EXPR}render partial: "${1:item}"${2:, locals: ${3:var}: @${3:var}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}]]></content>
+    <content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_EXPR}render "${1:partial/path}"${2:, ${3:var}: @${3:var}}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}]]></content>
     <tabTrigger>rp</tabTrigger>
     <scope>source.ruby.rails, text.haml</scope>
     <description>render partial</description>
