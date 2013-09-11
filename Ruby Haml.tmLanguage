@@ -90,7 +90,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>$|(?!\.|#|\{|\[|=|-|~|/)</string>
+			<string>$|(?!\.|#|\{|\[|[&amp;!]?=|-|~|/)</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -169,7 +169,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(?==|-|~)</string>
+			<string>^\s*(?=[&amp;!]?=|-|~)</string>
 			<key>end</key>
 			<string>$</string>
 			<key>patterns</key>
@@ -199,7 +199,7 @@
 		<key>rubyline</key>
 		<dict>
 			<key>begin</key>
-			<string>=|-|~</string>
+			<string>[&amp;!]?=|-|~</string>
 			<key>contentName</key>
 			<string>source.ruby.embedded.haml</string>
 			<key>end</key>
