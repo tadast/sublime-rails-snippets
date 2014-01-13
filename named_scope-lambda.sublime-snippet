@@ -2,6 +2,6 @@
     <content><![CDATA[scope :name, ->(${1:param}){ ${3:['${4:${5:field} = ?}', ${6:$1}]} }
 ]]></content>
     <tabTrigger>lsc</tabTrigger>
-    <scope>source.ruby.rails</scope>
+    <scope>source.ruby,source.rails</scope>
     <description>lambda</description>
 </snippet>
