@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_EXPR}render partial: "${1:item}", collection: ${2:@$1s}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}]]></content>
     <tabTrigger>rpc</tabTrigger>
-    <scope>source.ruby.rails, text.haml</scope>
+    <scope>source.ruby,source.rails, text.haml</scope>
     <description>render (partial, collection)</description>
 </snippet>

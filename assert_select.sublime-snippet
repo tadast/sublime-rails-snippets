@@ -3,6 +3,6 @@
 	$0
 end}]]></content>
     <tabTrigger>ass</tabTrigger>
-    <scope>source.ruby.rails</scope>
+    <scope>source.ruby,source.rails</scope>
     <description>assert_select</description>
 </snippet>

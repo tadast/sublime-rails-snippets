@@ -3,6 +3,6 @@
 	$0
 end]]></content>
     <tabTrigger>returning</tabTrigger>
-    <scope>source.ruby.rails</scope>
+    <scope>source.ruby,source.rails</scope>
     <description>returning do |variable| … end</description>
 </snippet>

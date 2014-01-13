@@ -3,6 +3,6 @@
 $0
 end]]></content>
   <tabTrigger>arc</tabTrigger>
-  <scope>source.ruby.rails</scope>
+  <scope>source.ruby,source.rails</scope>
   <description>Active Record model</description>
 </snippet>

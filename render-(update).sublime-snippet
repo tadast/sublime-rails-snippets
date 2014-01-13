@@ -3,6 +3,6 @@
 	$2.$0
 end]]></content>
     <tabTrigger>ru</tabTrigger>
-    <scope>source.ruby.rails</scope>
+    <scope>source.ruby,source.rails</scope>
     <description>render (update)</description>
 </snippet>
