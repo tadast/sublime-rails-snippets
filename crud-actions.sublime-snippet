@@ -12,6 +12,10 @@
     @${1} = ${1/(.+)/\u$1/g}.new(params[:${1}])
   end
 
+  def update
+    @${1} = ${1/(.+)/\u$1/g}.find(params[:id])
+  end
+
   def edit
     @${1} = ${1/(.+)/\u$1/g}.find(params[:id])
   end
