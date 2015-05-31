@@ -26,7 +26,15 @@ Look for "Ruby on Rails snippets". [Here's how to install packages](http://wbond
 ### Housekeeping
 
 :warning: You will need to do some housekeeping after installing it from Package Control.
-First of all, remove the original Rails directory (see [Backup](#backup)).
+First of all, remove the original Rails directory
+
+Regardless of which way of installation you choose, please backup the old Rails snippets directory. You don't want to have both this and the original snippets installed.
+
+```bash
+cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
+mv Rails ~/.RailsSublimeBackup
+```
+
 Then quit Sublime and delete Sublime's session cache.
 
 ```bash
