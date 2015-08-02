@@ -23,6 +23,9 @@ It is important to clone it into a folder called Rails. Some Sublime plugins hav
 
 Look for "Ruby on Rails snippets". [Here's how to install packages](http://wbond.net/sublime_packages/package_control/usage)
 
+**Please Note**:
+If you're a **Sublime Text 3** user you'd need to tell your editor to use the `Ruby on Rails syntax` provided by `Ruby on Rails Snippets`. One can find this option in the editor by navigating their way via - `View -> Syntax -> Open all with current extension as... -> Ruby on Rails Snippets -> Ruby on Rails`
+
 ### Housekeeping
 
 :warning: You will need to do some housekeeping after installing it from Package Control.
