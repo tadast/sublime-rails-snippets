@@ -1,4 +1,5 @@
-This package replaces the default Sublime Rails snippets.
-* Additional setup steps are required. *
-Please visit https://github.com/tadast/sublime-rails-snippets#sublime-text-2-rails-snippets
-for instructions
+Thanks for installing Ruby on Rails Snippets
+
+Package Controll installs the new snippets alongside the default, outdated ones provided by Sublime Text. If you'd like to completely replace the old snippets, follow installation via git instructions in the readme:
+
+https://github.com/tadast/sublime-rails-snippets/blob/master/README.md
