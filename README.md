@@ -26,8 +26,18 @@ This method replaces the default outdated snippets, but you have to keep it up t
 
 To install via git:
 
+* First, cd into the ST3 Packages directory
+
 ```bash
+➜ # Mac:
 ➜ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+➜ # Linux:
+➜ cd ~/.config/sublime-text-3/Packages/
+```
+
+* Then clone this repo into the folder
+
+```
 ➜ ls | grep Rails
 ➜ # if there is a `Rails` dir, back it up e.g. archive it and remove the original.
 ➜ git clone https://github.com/tadast/sublime-rails-snippets.git Rails
