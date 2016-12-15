@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}}::EachValidator
+  def validate_each record, attribute, value
+    begin
+      ${0: validation logic goes here}
+    rescue
+      record.errors[attribute] << (options[:message] || '${2:Enter your error message here}')
+    end
+  end
+end]]></content>
+  <tabTrigger>claval</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>class NAME end for a Validator</description>
+</snippet>
